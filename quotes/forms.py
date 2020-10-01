@@ -4,7 +4,7 @@ from quotes.models import Quote, Line
 
 
 class QuoteForm(forms.Form):
-    quote = forms.CharField(widget=forms.Textarea)
+    quote = forms.CharField(widget=forms.TextArea)
 
     def is_valid(self):
         result = super(QuoteForm, self).is_valid()
